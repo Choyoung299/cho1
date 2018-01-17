@@ -1,0 +1,352 @@
+@charset "UTF-8";
+@function db($num){
+	@return $num/20;
+}
+*{
+	box-sizing:border-box;
+}
+body{
+	background:#f6f6f6;
+}
+i{
+	font-family:'iconfont';
+	font-style:normal;
+}
+a{
+	text-decoration:none;
+}
+h5,p{
+	margin:0;
+	padding:0;
+}
+#top{
+	width:100%;
+	height:db(38rem);
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	background:#fafafa;
+	border-bottom:1px solid #C9C7C8;
+}
+.tl{
+	width:11.875%;
+	height:db(38rem);
+	line-height:db(38rem);
+	margin-left: db(9rem);
+}
+.tl a{
+	width:11.875%;
+	height:db(38rem);
+	display:block;
+	color:#5e5e5e;
+	font-size:db(20rem);
+	border-sizing:border-box;
+	text-align:center;	
+}
+.tc{
+	width:68.125%;
+	height:db(38rem);
+	text-align:center;
+	line-height:db(38rem);
+	font-size:db(15rem);
+	color:#5e5e5e;
+}
+.tr{
+	width:20%;
+	height:db(38rem);
+	text-align:center;
+	line-height:db(38rem);
+}
+.tr a {
+	display:flex;
+	justify-content:flex-star;
+}
+.tr a span{
+	color:#7e7e7e;
+	font-size:db(11rem);
+	margin:0 db(5rem);
+}
+.tr i{
+	color:#a6a6a6;
+}
+
+#shop{
+	margin:db(12.8rem) 0;
+	border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    font-size:db(20rem);
+}
+.shop-head{
+	width:100%;
+	padding: db(6.8rem) db(12.8rem);
+	border:none;
+	font-size:db(12rem);
+	background:white;
+	border-bottom:1px solid #e5e5e5;
+}
+.shop-head input{
+	width:6.3125%;
+	height:db(17rem);
+	margin-right: db(4.267rem);
+	border:none;
+	background:url(../img/checkbox.png) 0 100% no-repeat;
+	-webkit-appearance: none;
+	background-size:db(17rem) auto;
+	vertical-align: middle;
+	outline:none;	
+}
+.shop-head a{
+	color:#5e5e5e;
+	font-size:db(13rem);
+	font-weight:400;
+}
+.goods{
+	width:100%;
+	height:auto;
+	padding:db(8.5rem);
+	background:white;
+	color:#5e5e5e;
+}
+.cartgoods{
+	padding:db(4.267rem) db(4.267rem) 0 db(33.48rem);
+	position:relative;
+}
+.cartgoods input{
+	width:6.3125%;
+	height:db(17rem);
+	margin-right: db(4.267rem);
+	border:none;
+	background:url(../img/checkbox.png) 0 100% no-repeat;
+	-webkit-appearance: none;
+	background-size:db(17rem) auto;
+	vertical-align: middle;
+	outline:none;
+	position: absolute;
+    left: db(4.267rem);
+    top:30%;
+}
+.cartgoods img{
+	width:auto;
+	height:db(81.792rem);
+}
+.cgr{
+	width:75%;
+	height:db(70.4rem);
+	float:right;
+}
+.cgr h5{
+	font-size:db(10rem);
+	height:db(30rem);
+	line-height:db(16rem);
+}
+.cgr p{
+	height:db(34rem);
+	color:#999;
+	font-size:db(10rem);
+	line-height:db(16rem);
+}
+.cgr-btm{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.cgr-btm span:nth-child(1){
+	font-size:db(13rem);
+	color:#333;
+}
+.cgr-btm span:nth-child(2){
+	font-size:db(10rem);
+	color:#999;
+}
+
+//------
+#floor{
+	width:100%;
+	height:db(42rem);
+	position:fixed;
+	bottom:0;
+	border-top:1px solid #d8d8d8;
+	background:#fefefe;
+	padding:db(8.5rem) db(12.8rem);
+	// display:flex;
+	// align-items:center;
+}
+#floor .fll input{
+	width:6.3125%;
+	height:db(17rem);
+	margin-right: db(4.267rem);
+	margin-left:db(10rem);
+	border:none;
+	background:url(../img/checkbox.png) 0 100% no-repeat;
+	-webkit-appearance: none;
+	background-size:db(17rem) auto;
+	vertical-align: middle;
+	outline:none;
+	position: absolute;
+    left: db(4.267rem);
+    top:30%;
+}
+.fll span:nth-child(2){
+	margin-left:db(4.267rem);
+	font-size:db(12rem);
+	vertical-align: middle;
+	margin-left:db(27rem);
+	color:#5e5e5e;
+}
+.fll span:nth-child(3){
+	margin-left:db(4.267rem);
+	font-size:db(12rem);
+	vertical-align: middle;
+	color:#EE4566;
+	position:absolute;
+	line-height:db(28rem);
+}
+.account{
+	float:right;
+	background:#ff5777;
+	color:white;
+	height:db(29.43rem);
+	line-height:db(19rem);
+	font-size:db(12.78rem);
+	box-sizing:border-box;
+	margin:db(3.4rem) db(5.1rem);
+	padding:db(5.12rem) db(10.66rem);
+	border-radius:db(3.4rem);
+	text-align:center;
+	min-width:db(85.2rem);
+	position:absolute;
+	top:db(4.26rem);
+	right:db(12.78rem);
+}
+//编辑内容的商品
+
+.edit-goods{
+	width:100%;
+	height:auto;
+	padding:db(8.5rem);
+	background:white;
+	color:#5e5e5e;
+}
+.edit-cartgoods{
+	padding:db(4.267rem) db(4.267rem) 0 db(33.48rem);
+	position:relative;
+}
+.edit-goods input{
+	width:6.3125%;
+	height:db(17rem);
+	margin-right: db(4.267rem);
+	border:none;
+	background:url(../img/checkbox.png) 0 100% no-repeat;
+	-webkit-appearance: none;
+	background-size:db(17rem) auto;
+	vertical-align: middle;
+	outline:none;
+	position: absolute;
+    left: db(4.267rem);
+    top:30%;
+}
+.edit-goods img{
+	width:auto;
+	height:db(81.792rem);
+}
+.edit-com{
+	width:75%;
+	height:db(70.4rem);
+	float:right;
+}
+
+.edit-com p{
+	height:db(34rem);
+	color:#999;
+	font-size:db(10rem);
+	line-height:db(16rem);
+}
+.edit-count{
+	width:60%;
+	height:db(25.6rem);
+	margin-top: db(3rem);
+	border-radius:db(2rem);
+	color:#333;
+	display:flex;
+	align-items:center;
+}
+.edit-count span{
+    height: db(22rem);
+    line-height: db(22rem);
+    text-align: center;
+    width: 30%;
+    border: 1px solid #999;
+    font-size: db(20rem);
+    display:flex;
+    justify-content: center;
+	align-items:center;
+}
+.edit-count .edit-count-mp{
+	font-size:db(15rem);
+}
+.edit-choose{
+	width:100%;
+	height:db(40rem);
+	border:1px solid #999;
+	padding:db(4.267rem) db(8.533rem);
+}
+.edit-choose i{
+	display:block;
+	float:right;
+	height:db(20rem);
+	font-size:db(20rem);
+	transform:rotateZ(-90deg);
+}
+.edit-account{
+	width:60%;
+	height:db(34rem);
+	display:flex;
+	align-items:center;
+	float:right;
+	line-height:db(34rem);
+}
+.accl{
+	width:35%;
+	border:1px solid #ff5777;
+	color:#ff5777;
+	font-size:db(10rem);
+	text-align:center;
+	line-height:db(19rem);
+	border-radius:db(3.4rem);
+	float:right;
+	margin-right:db(10rem);
+}
+.accr{
+	float:right;
+	width:35%;
+	border:1px solid white;;
+	background:#ff5777;
+	color:white;;
+	font-size:db(10rem);
+	text-align:center;
+	line-height:db(19rem);
+	border-radius:db(3.4rem);
+	margin-right:db(10rem);
+}
+.tr .edit-a{
+	display:none;
+}
+.edit-goods{
+	display:none;
+}
+.edit-account{
+	display:none;
+}
+.edit-count .edit-minus{
+    height: db(22rem);
+    line-height: db(22rem);
+    text-align: center;
+    width: 30%;
+    color:#999;
+    background:#f6f6f6;
+    border: 1px solid #e5e5e5;
+    font-size: db(20rem);
+    display:flex;
+    justify-content: center;
+	align-items:center;
+}

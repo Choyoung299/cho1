@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<p></p>
+  </div>
+</body>
+</html>
+<script>
+//距离x还剩x天x时x分x秒
+	var p = document.querySelector('p');
+	test()
+	function test(){		
+	var myDate =new Date();
+	var ms = myDate.getTime();
+	var ydDate = new Date(2018,2,01);
+	var ys = ydDate.getTime();
+	var res = ys - ms;
+
+		var a = 1000;
+		var ma = 60*a;
+		var ha = 60*ma;
+		var da = 24*ha;
+
+		var d = parseInt(res/da);
+		var h = parseInt(res%da/ha);
+		var m = parseInt(res%da%ha/ma);
+		var s = parseInt(res%da%ha%ma/a);
+		p.innerHTML ='距离元旦还有:'+ d+'天'+h+'时'+m+'分'+s+'秒'
+	}
+	setInterval(test,1000);	
+</script>
